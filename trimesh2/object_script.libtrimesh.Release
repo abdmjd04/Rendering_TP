@@ -1,0 +1,25 @@
+CREATE ..\trimesh2\lib\libtrimesh.a
+ADDMOD release\GLCamera.o
+ADDMOD release\ICP.o
+ADDMOD release\KDtree.o
+ADDMOD release\TriMesh_bounding.o
+ADDMOD release\TriMesh_connectivity.o
+ADDMOD release\TriMesh_curvature.o
+ADDMOD release\TriMesh_grid.o
+ADDMOD release\TriMesh_io.o
+ADDMOD release\TriMesh_normals.o
+ADDMOD release\TriMesh_pointareas.o
+ADDMOD release\TriMesh_stats.o
+ADDMOD release\TriMesh_tstrips.o
+ADDMOD release\conn_comps.o
+ADDMOD release\diffuse.o
+ADDMOD release\edgeflip.o
+ADDMOD release\faceflip.o
+ADDMOD release\filter.o
+ADDMOD release\lmsmooth.o
+ADDMOD release\overlap.o
+ADDMOD release\remove.o
+ADDMOD release\reorder_verts.o
+ADDMOD release\shared.o
+ADDMOD release\subdiv.o
+SAVE
