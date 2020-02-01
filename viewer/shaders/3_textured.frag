@@ -18,5 +18,5 @@ out vec4 fragColor;
 
 void main( void )
 {
-   fragColor = vertColor;
+   fragColor = texture(colorTexture, textCoords) * lightIntensity;
 }

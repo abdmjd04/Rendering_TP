@@ -12,6 +12,10 @@ in vec4 normal;
 in vec4 color;
 in vec2 texcoords;
 
+
+const vec4 camera_coord = vec4(-1.0, 1.0, 1.0, 0.0);
+const vec4 light_coord = vec4(0.0, 50.0, 1.0, 0.0);
+
 // Camera-space coordinates
 out vec4 eyeVector;
 out vec4 lightVector;
@@ -28,7 +32,12 @@ void main( void )
     vertNormal.w = 0.0;
     textCoords = texcoords;
 
-    // TODO: compute eyeVector, lightVector. 
+    eyeVector.xyz = normalize(light_coord.xyz-vertex.xyz);
+    eyeVector.w = 0.0;
+
+    lightVector.xyz = normalize(camera_coord.xyz - vertex.xyz); 
+	lightVector.w = 0.0;
+	
 
     gl_Position = perspective * matrix * vertex;
 }

@@ -34,423 +34,423 @@ SUBTARGETS    =  \
 
 sub-trimesh2-qmake_all:  FORCE
 	@if not exist trimesh2\ mkdir trimesh2\ & if not exist trimesh2\ exit 1
-	cd trimesh2\ && $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\trimesh2\trimesh2.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
+	cd trimesh2\ && $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\trimesh2\trimesh2.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 	cd trimesh2\ && $(MAKE) -f Makefile qmake_all
 sub-trimesh2: FORCE
 	@if not exist trimesh2\ mkdir trimesh2\ & if not exist trimesh2\ exit 1
-	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\trimesh2\trimesh2.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile
+	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\trimesh2\trimesh2.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile
 sub-trimesh2-make_first-ordered: FORCE
 	@if not exist trimesh2\ mkdir trimesh2\ & if not exist trimesh2\ exit 1
-	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\trimesh2\trimesh2.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile 
+	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\trimesh2\trimesh2.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile 
 sub-trimesh2-make_first: FORCE
 	@if not exist trimesh2\ mkdir trimesh2\ & if not exist trimesh2\ exit 1
-	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\trimesh2\trimesh2.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile 
+	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\trimesh2\trimesh2.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile 
 sub-trimesh2-all-ordered: FORCE
 	@if not exist trimesh2\ mkdir trimesh2\ & if not exist trimesh2\ exit 1
-	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\trimesh2\trimesh2.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile all
+	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\trimesh2\trimesh2.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile all
 sub-trimesh2-all: FORCE
 	@if not exist trimesh2\ mkdir trimesh2\ & if not exist trimesh2\ exit 1
-	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\trimesh2\trimesh2.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile all
+	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\trimesh2\trimesh2.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile all
 sub-trimesh2-clean-ordered: FORCE
 	@if not exist trimesh2\ mkdir trimesh2\ & if not exist trimesh2\ exit 1
-	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\trimesh2\trimesh2.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile clean
+	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\trimesh2\trimesh2.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile clean
 sub-trimesh2-clean: FORCE
 	@if not exist trimesh2\ mkdir trimesh2\ & if not exist trimesh2\ exit 1
-	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\trimesh2\trimesh2.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile clean
+	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\trimesh2\trimesh2.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile clean
 sub-trimesh2-distclean-ordered: FORCE
 	@if not exist trimesh2\ mkdir trimesh2\ & if not exist trimesh2\ exit 1
-	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\trimesh2\trimesh2.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile distclean
+	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\trimesh2\trimesh2.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile distclean
 sub-trimesh2-distclean: FORCE
 	@if not exist trimesh2\ mkdir trimesh2\ & if not exist trimesh2\ exit 1
-	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\trimesh2\trimesh2.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile distclean
+	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\trimesh2\trimesh2.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile distclean
 sub-trimesh2-install_subtargets-ordered: FORCE
 	@if not exist trimesh2\ mkdir trimesh2\ & if not exist trimesh2\ exit 1
-	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\trimesh2\trimesh2.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile install
+	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\trimesh2\trimesh2.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile install
 sub-trimesh2-install_subtargets: FORCE
 	@if not exist trimesh2\ mkdir trimesh2\ & if not exist trimesh2\ exit 1
-	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\trimesh2\trimesh2.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile install
+	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\trimesh2\trimesh2.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile install
 sub-trimesh2-uninstall_subtargets-ordered: FORCE
 	@if not exist trimesh2\ mkdir trimesh2\ & if not exist trimesh2\ exit 1
-	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\trimesh2\trimesh2.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile uninstall
+	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\trimesh2\trimesh2.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile uninstall
 sub-trimesh2-uninstall_subtargets: FORCE
 	@if not exist trimesh2\ mkdir trimesh2\ & if not exist trimesh2\ exit 1
-	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\trimesh2\trimesh2.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile uninstall
+	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\trimesh2\trimesh2.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile uninstall
 sub-viewer-qmake_all: sub-trimesh2-qmake_all FORCE
 	@if not exist viewer\ mkdir viewer\ & if not exist viewer\ exit 1
-	cd viewer\ && $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\viewer\viewer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
+	cd viewer\ && $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\viewer\viewer.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 	cd viewer\ && $(MAKE) -f Makefile qmake_all
 sub-viewer: FORCE
 	@if not exist viewer\ mkdir viewer\ & if not exist viewer\ exit 1
-	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\viewer\viewer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile
+	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\viewer\viewer.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile
 sub-viewer-make_first-ordered: sub-trimesh2-make_first-ordered  FORCE
 	@if not exist viewer\ mkdir viewer\ & if not exist viewer\ exit 1
-	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\viewer\viewer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile 
+	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\viewer\viewer.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile 
 sub-viewer-make_first: FORCE
 	@if not exist viewer\ mkdir viewer\ & if not exist viewer\ exit 1
-	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\viewer\viewer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile 
+	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\viewer\viewer.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile 
 sub-viewer-all-ordered: sub-trimesh2-all-ordered  FORCE
 	@if not exist viewer\ mkdir viewer\ & if not exist viewer\ exit 1
-	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\viewer\viewer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile all
+	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\viewer\viewer.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile all
 sub-viewer-all: FORCE
 	@if not exist viewer\ mkdir viewer\ & if not exist viewer\ exit 1
-	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\viewer\viewer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile all
+	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\viewer\viewer.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile all
 sub-viewer-clean-ordered: sub-trimesh2-clean-ordered  FORCE
 	@if not exist viewer\ mkdir viewer\ & if not exist viewer\ exit 1
-	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\viewer\viewer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile clean
+	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\viewer\viewer.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile clean
 sub-viewer-clean: FORCE
 	@if not exist viewer\ mkdir viewer\ & if not exist viewer\ exit 1
-	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\viewer\viewer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile clean
+	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\viewer\viewer.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile clean
 sub-viewer-distclean-ordered: sub-trimesh2-distclean-ordered  FORCE
 	@if not exist viewer\ mkdir viewer\ & if not exist viewer\ exit 1
-	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\viewer\viewer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile distclean
+	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\viewer\viewer.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile distclean
 sub-viewer-distclean: FORCE
 	@if not exist viewer\ mkdir viewer\ & if not exist viewer\ exit 1
-	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\viewer\viewer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile distclean
+	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\viewer\viewer.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile distclean
 sub-viewer-install_subtargets-ordered: sub-trimesh2-install_subtargets-ordered  FORCE
 	@if not exist viewer\ mkdir viewer\ & if not exist viewer\ exit 1
-	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\viewer\viewer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile install
+	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\viewer\viewer.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile install
 sub-viewer-install_subtargets: FORCE
 	@if not exist viewer\ mkdir viewer\ & if not exist viewer\ exit 1
-	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\viewer\viewer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile install
+	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\viewer\viewer.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile install
 sub-viewer-uninstall_subtargets-ordered: sub-trimesh2-uninstall_subtargets-ordered  FORCE
 	@if not exist viewer\ mkdir viewer\ & if not exist viewer\ exit 1
-	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\viewer\viewer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile uninstall
+	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\viewer\viewer.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile uninstall
 sub-viewer-uninstall_subtargets: FORCE
 	@if not exist viewer\ mkdir viewer\ & if not exist viewer\ exit 1
-	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\viewer\viewer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile uninstall
+	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\viewer\viewer.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile uninstall
 
-Makefile: GPGPU_TP.pro D:/QT/5.12.6/mingw73_64/mkspecs/win32-g++/qmake.conf D:/QT/5.12.6/mingw73_64/mkspecs/features/spec_pre.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/qdevice.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/device_config.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/common/sanitize.conf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/common/gcc-base.conf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/common/g++-base.conf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/common/angle.conf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/win32/windows_vulkan_sdk.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/common/windows-vulkan.conf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/common/g++-win32.conf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/qconfig.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3danimation.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3danimation_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dcore.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dcore_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dextras.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dextras_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dinput.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dinput_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dlogic.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dlogic_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquick.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquick_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickanimation.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickextras.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickextras_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickinput.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickinput_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickrender.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickrender_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickscene2d.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3drender.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3drender_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_accessibility_support_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axbase.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axbase_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axcontainer.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axcontainer_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axserver.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axserver_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_bluetooth.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_bluetooth_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_bootstrap_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_concurrent.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_concurrent_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_core.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_core_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_dbus.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_dbus_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_designer.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_designer_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_designercomponents_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_edid_support_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_egl_support_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_fb_support_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_gamepad.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_gamepad_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_gui.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_gui_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_help.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_help_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_location.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_location_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_multimedia.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_multimedia_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_multimediawidgets.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_network.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_network_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_nfc.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_nfc_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_opengl.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_opengl_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_openglextensions.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_openglextensions_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_packetprotocol_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_positioning.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_positioning_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_positioningquick.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_positioningquick_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_printsupport.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_printsupport_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qml.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qml_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qmldebug_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qmldevtools_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qmltest.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qmltest_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quick.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quick_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickparticles_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickshapes_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickwidgets.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_remoteobjects.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_remoteobjects_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_repparser.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_repparser_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_scxml.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_scxml_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_sensors.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_sensors_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_serialbus.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_serialbus_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_serialport.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_serialport_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_sql.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_sql_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_svg.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_svg_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_testlib.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_testlib_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_texttospeech.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_texttospeech_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_theme_support_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_uiplugin.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_uitools.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_uitools_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_vulkan_support_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_webchannel.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_webchannel_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_websockets.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_websockets_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_widgets.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_widgets_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_windowsuiautomation_support_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_winextras.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_winextras_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_xml.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_xml_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_xmlpatterns.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/qt_functions.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/qt_config.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/win32-g++/qmake.conf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/spec_post.prf \
+Makefile: GPGPU_TP.pro ../../../QT/5.12.6/mingw73_64/mkspecs/win32-g++/qmake.conf ../../../QT/5.12.6/mingw73_64/mkspecs/features/spec_pre.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/qdevice.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/device_config.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/common/sanitize.conf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/common/gcc-base.conf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/common/g++-base.conf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/common/angle.conf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/win32/windows_vulkan_sdk.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/common/windows-vulkan.conf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/common/g++-win32.conf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/qconfig.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3danimation.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3danimation_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dcore.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dcore_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dextras.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dextras_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dinput.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dinput_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dlogic.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dlogic_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquick.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquick_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickanimation.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickextras.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickextras_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickinput.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickinput_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickrender.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickrender_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickscene2d.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3drender.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3drender_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_accessibility_support_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axbase.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axbase_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axcontainer.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axcontainer_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axserver.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axserver_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_bluetooth.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_bluetooth_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_bootstrap_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_concurrent.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_concurrent_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_core.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_core_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_dbus.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_dbus_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_designer.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_designer_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_designercomponents_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_edid_support_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_egl_support_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_fb_support_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_gamepad.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_gamepad_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_gui.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_gui_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_help.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_help_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_location.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_location_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_multimedia.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_multimedia_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_multimediawidgets.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_network.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_network_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_nfc.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_nfc_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_opengl.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_opengl_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_openglextensions.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_openglextensions_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_packetprotocol_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_positioning.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_positioning_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_positioningquick.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_positioningquick_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_printsupport.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_printsupport_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qml.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qml_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qmldebug_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qmldevtools_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qmltest.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qmltest_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quick.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quick_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickcontrols2.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickparticles_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickshapes_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quicktemplates2.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickwidgets.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_remoteobjects.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_remoteobjects_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_repparser.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_repparser_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_scxml.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_scxml_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_sensors.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_sensors_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_serialbus.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_serialbus_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_serialport.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_serialport_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_sql.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_sql_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_svg.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_svg_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_testlib.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_testlib_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_texttospeech.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_texttospeech_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_theme_support_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_uiplugin.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_uitools.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_uitools_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_vulkan_support_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_webchannel.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_webchannel_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_websockets.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_websockets_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_widgets.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_widgets_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_windowsuiautomation_support_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_winextras.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_winextras_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_xml.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_xml_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_xmlpatterns.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/qt_functions.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/qt_config.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/win32-g++/qmake.conf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/spec_post.prf \
 		.qmake.stash \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/exclusive_builds.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/toolchain.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/default_pre.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/win32/default_pre.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/resolve_config.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/exclusive_builds_post.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/default_post.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/qml_debug.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/precompile_header.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/warn_on.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/qmake_use.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/file_copies.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/win32/windows.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/testcase_targets.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/exceptions.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/yacc.prf \
-		D:/QT/5.12.6/mingw73_64/mkspecs/features/lex.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/exclusive_builds.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/toolchain.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/default_pre.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/win32/default_pre.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/resolve_config.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/exclusive_builds_post.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/default_post.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/qml_debug.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/precompile_header.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/warn_on.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/qmake_use.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/file_copies.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/win32/windows.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/testcase_targets.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/exceptions.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/yacc.prf \
+		../../../QT/5.12.6/mingw73_64/mkspecs/features/lex.prf \
 		GPGPU_TP.pro
 	$(QMAKE) -o Makefile GPGPU_TP.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
-D:/QT/5.12.6/mingw73_64/mkspecs/features/spec_pre.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/qdevice.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/device_config.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/common/sanitize.conf:
-D:/QT/5.12.6/mingw73_64/mkspecs/common/gcc-base.conf:
-D:/QT/5.12.6/mingw73_64/mkspecs/common/g++-base.conf:
-D:/QT/5.12.6/mingw73_64/mkspecs/common/angle.conf:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/win32/windows_vulkan_sdk.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/common/windows-vulkan.conf:
-D:/QT/5.12.6/mingw73_64/mkspecs/common/g++-win32.conf:
-D:/QT/5.12.6/mingw73_64/mkspecs/qconfig.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3danimation.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3danimation_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dcore.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dcore_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dextras.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dextras_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dinput.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dinput_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dlogic.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dlogic_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquick.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquick_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickanimation.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickextras.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickextras_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickinput.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickinput_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickrender.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickrender_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickscene2d.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3drender.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3drender_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_accessibility_support_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axbase.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axbase_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axcontainer.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axcontainer_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axserver.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axserver_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_bluetooth.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_bluetooth_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_bootstrap_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_concurrent.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_concurrent_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_core.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_core_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_dbus.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_dbus_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_designer.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_designer_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_designercomponents_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_edid_support_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_egl_support_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_fb_support_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_gamepad.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_gamepad_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_gui.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_gui_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_help.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_help_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_location.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_location_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_multimedia.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_multimedia_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_multimediawidgets.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_network.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_network_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_nfc.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_nfc_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_opengl.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_opengl_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_openglextensions.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_openglextensions_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_packetprotocol_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_positioning.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_positioning_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_positioningquick.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_positioningquick_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_printsupport.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_printsupport_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qml.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qml_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qmldebug_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qmldevtools_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qmltest.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qmltest_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quick.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quick_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickcontrols2.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickparticles_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickshapes_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quicktemplates2.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickwidgets.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickwidgets_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_remoteobjects.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_remoteobjects_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_repparser.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_repparser_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_scxml.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_scxml_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_sensors.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_sensors_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_serialbus.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_serialbus_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_serialport.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_serialport_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_sql.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_sql_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_svg.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_svg_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_testlib.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_testlib_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_texttospeech.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_texttospeech_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_theme_support_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_uiplugin.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_uitools.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_uitools_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_vulkan_support_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_webchannel.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_webchannel_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_websockets.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_websockets_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_widgets.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_widgets_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_windowsuiautomation_support_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_winextras.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_winextras_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_xml.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_xml_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_xmlpatterns.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/qt_functions.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/qt_config.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/win32-g++/qmake.conf:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/spec_post.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/spec_pre.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/qdevice.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/device_config.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/common/sanitize.conf:
+../../../QT/5.12.6/mingw73_64/mkspecs/common/gcc-base.conf:
+../../../QT/5.12.6/mingw73_64/mkspecs/common/g++-base.conf:
+../../../QT/5.12.6/mingw73_64/mkspecs/common/angle.conf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/win32/windows_vulkan_sdk.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/common/windows-vulkan.conf:
+../../../QT/5.12.6/mingw73_64/mkspecs/common/g++-win32.conf:
+../../../QT/5.12.6/mingw73_64/mkspecs/qconfig.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3danimation.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3danimation_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dcore.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dcore_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dextras.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dextras_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dinput.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dinput_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dlogic.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dlogic_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquick.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquick_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickanimation.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickanimation_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickextras.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickextras_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickinput.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickinput_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickrender.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickrender_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickscene2d.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3dquickscene2d_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3drender.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_3drender_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_accessibility_support_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axbase.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axbase_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axcontainer.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axcontainer_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axserver.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_axserver_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_bluetooth.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_bluetooth_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_bootstrap_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_concurrent.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_concurrent_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_core.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_core_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_dbus.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_dbus_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_designer.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_designer_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_designercomponents_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_devicediscovery_support_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_edid_support_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_egl_support_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_eventdispatcher_support_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_fb_support_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_fontdatabase_support_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_gamepad.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_gamepad_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_gui.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_gui_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_help.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_help_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_location.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_location_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_multimedia.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_multimedia_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_multimediawidgets.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_multimediawidgets_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_network.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_network_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_nfc.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_nfc_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_opengl.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_opengl_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_openglextensions.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_openglextensions_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_packetprotocol_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_platformcompositor_support_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_positioning.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_positioning_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_positioningquick.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_positioningquick_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_printsupport.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_printsupport_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qml.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qml_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qmldebug_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qmldevtools_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qmltest.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qmltest_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_qtmultimediaquicktools_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quick.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quick_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickcontrols2.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickcontrols2_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickparticles_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickshapes_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quicktemplates2.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quicktemplates2_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickwidgets.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_quickwidgets_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_remoteobjects.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_remoteobjects_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_repparser.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_repparser_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_scxml.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_scxml_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_sensors.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_sensors_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_serialbus.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_serialbus_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_serialport.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_serialport_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_sql.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_sql_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_svg.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_svg_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_testlib.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_testlib_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_texttospeech.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_texttospeech_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_theme_support_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_uiplugin.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_uitools.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_uitools_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_vulkan_support_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_webchannel.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_webchannel_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_websockets.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_websockets_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_widgets.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_widgets_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_windowsuiautomation_support_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_winextras.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_winextras_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_xml.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_xml_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_xmlpatterns.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/modules/qt_lib_xmlpatterns_private.pri:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/qt_functions.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/qt_config.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/win32-g++/qmake.conf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/spec_post.prf:
 .qmake.stash:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/exclusive_builds.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/toolchain.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/default_pre.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/win32/default_pre.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/resolve_config.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/exclusive_builds_post.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/default_post.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/qml_debug.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/precompile_header.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/warn_on.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/qmake_use.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/file_copies.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/win32/windows.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/testcase_targets.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/exceptions.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/yacc.prf:
-D:/QT/5.12.6/mingw73_64/mkspecs/features/lex.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/exclusive_builds.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/toolchain.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/default_pre.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/win32/default_pre.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/resolve_config.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/exclusive_builds_post.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/default_post.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/qml_debug.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/precompile_header.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/warn_on.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/qmake_use.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/file_copies.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/win32/windows.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/testcase_targets.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/exceptions.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/yacc.prf:
+../../../QT/5.12.6/mingw73_64/mkspecs/features/lex.prf:
 GPGPU_TP.pro:
 qmake: FORCE
 	@$(QMAKE) -o Makefile GPGPU_TP.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
@@ -468,34 +468,34 @@ uninstall_subtargets: sub-trimesh2-uninstall_subtargets-ordered sub-viewer-unins
 
 sub-trimesh2-debug_ordered:
 	@if not exist trimesh2\ mkdir trimesh2\ & if not exist trimesh2\ exit 1
-	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\trimesh2\trimesh2.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile debug
+	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\trimesh2\trimesh2.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile debug
 sub-viewer-debug_ordered: sub-trimesh2-debug_ordered 
 	@if not exist viewer\ mkdir viewer\ & if not exist viewer\ exit 1
-	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\viewer\viewer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile debug
+	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\viewer\viewer.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile debug
 debug: sub-trimesh2-debug_ordered sub-viewer-debug_ordered
 
 sub-trimesh2-release_ordered:
 	@if not exist trimesh2\ mkdir trimesh2\ & if not exist trimesh2\ exit 1
-	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\trimesh2\trimesh2.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile release
+	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\trimesh2\trimesh2.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile release
 sub-viewer-release_ordered: sub-trimesh2-release_ordered 
 	@if not exist viewer\ mkdir viewer\ & if not exist viewer\ exit 1
-	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\viewer\viewer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile release
+	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\viewer\viewer.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile release
 release: sub-trimesh2-release_ordered sub-viewer-release_ordered
 
 sub-trimesh2-check_ordered:
 	@if not exist trimesh2\ mkdir trimesh2\ & if not exist trimesh2\ exit 1
-	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\trimesh2\trimesh2.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile check
+	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\trimesh2\trimesh2.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile check
 sub-viewer-check_ordered: sub-trimesh2-check_ordered 
 	@if not exist viewer\ mkdir viewer\ & if not exist viewer\ exit 1
-	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\viewer\viewer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile check
+	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\viewer\viewer.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile check
 check: sub-trimesh2-check_ordered sub-viewer-check_ordered
 
 sub-trimesh2-benchmark_ordered:
 	@if not exist trimesh2\ mkdir trimesh2\ & if not exist trimesh2\ exit 1
-	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\trimesh2\trimesh2.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile benchmark
+	cd trimesh2\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\trimesh2\trimesh2.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile benchmark
 sub-viewer-benchmark_ordered: sub-trimesh2-benchmark_ordered 
 	@if not exist viewer\ mkdir viewer\ & if not exist viewer\ exit 1
-	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile C:\Users\majee\Desktop\junk\GPGPU_TPrealzip\GPGPU_TP-master\viewer\viewer.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile benchmark
+	cd viewer\ && ( if not exist Makefile $(QMAKE) -o Makefile "D:\desktopjan2020\New folder\Rendering_TP\viewer\viewer.pro" -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug" ) && $(MAKE) -f Makefile benchmark
 benchmark: sub-trimesh2-benchmark_ordered sub-viewer-benchmark_ordered
 install:install_subtargets  FORCE
 

@@ -14,14 +14,25 @@ uniform vec3 bbmax;
 uniform float radius;
 uniform float groundDistance;
 uniform vec3 center;
+uniform bool blinnPhong;
 
-#define MAX_SCENE_BOUNDS    10.0
-#define EPS                 0.000001
+#define MAX_SCENE_BOUNDS    10
+#define EPS                 0.0001
+
+const int MAX_TRACE = 20;
 
 
 struct hitinfo_t {
     vec4 t;
     int hit_vptr;
+};
+
+struct sRayIntersection {
+    vec4 origin;
+    vec4 direction;
+    vec4 pointHit;
+    vec4 normal;
+    vec4 color;
 };
 
 layout (std430, binding = 1) buffer Vertices
@@ -44,52 +55,258 @@ layout (std430, binding = 4) buffer Meshes
     int indices[];
 };
 
+
 bool intersectBoundingBox(vec4 origin, vec4 dir) {
-	// TODO
-    return false;
+
+    vec3 t1 = (bbmin.xyz - origin.xyz)/dir.xyz,
+         t2 = (bbmax.xyz - origin.xyz)/dir.xyz;
+
+    float tmin = max(max(min(t1.x, t2.x), min(t1.y, t2.y)), min(t1.z, t2.z)),
+          tmax = min(min(max(t1.x, t2.x), max(t1.y, t2.y)), max(t1.z, t2.z));
+
+    return (tmax >= tmin);
 }
 
-bool intersectTriangle(vec4 origin, vec4 dir, int ptr, out vec4 dist) 
+bool intersectTriangle(vec4 origin, vec4 dir, int ptr, out vec4 dist)
 {
-	// TODO
-    return false;
+    
+       vec3 dirNormalized = normalize(dir.xyz);
+       vec4 v0 = vertices[indices[ptr]],
+         v1 = vertices[indices[ptr + 1]],
+         v2 = vertices[indices[ptr + 2]];
+
+    vec3 edge1 = v1.xyz - v0.xyz,
+         edge2 = v2.xyz - v0.xyz;
+
+    vec3 h,s,q;
+    float a,f,u,v;
+
+    h = cross(dirNormalized, edge2);
+    a = dot(edge1,h);
+
+    if (a > -EPS && a < EPS)
+        return false;
+
+    f = 1.0/a;
+    s = origin.xyz - v0.xyz;
+    u  = f*dot(s,h);
+
+    if (u < 0.0 || u > 1.0)
+        return false;
+
+    q = cross(s, edge1);
+    v = f * dot(q,dirNormalized);
+
+    if (v < 0.0 || u + v > 1.0)
+        return false;
+
+    float t = f * dot(q,edge2);
+
+    if (t > EPS){
+        dist = vec4(u,v,1-u-v,t);
+        return true;
+    }
+    else
+        return false;
 }
+
 
 vec4 interpolateNormal(hitinfo_t h)
 {
-	// TODO
-    return vec4(1);
+
+    vec4 normal0 = normalize(normals[indices[h.hit_vptr]]),
+         normal1 = normalize(normals[indices[h.hit_vptr+1]]),
+         normal2 = normalize(normals[indices[h.hit_vptr+2]]);
+
+     if (h.hit_vptr >= 0)
+        return normalize(h.t.x * normal1 + h.t.y * normal2 + h.t.z * normal0);
+     else if (h.hit_vptr == -1)
+        return vec4(0, 1, 0, 0);
+     else
+        return vec4(1);
 }
 
 vec4 interpolateColor(hitinfo_t h)
 {
-	// TODO
-	return vec4(1);
+    vec4 color0 = colors[indices[h.hit_vptr]],
+         color1 = colors[indices[h.hit_vptr+1]],
+         color2 = colors[indices[h.hit_vptr+2]];
+
+    vec2  coord = vec2(cos(h.t.x/radius), sin(h.t.z/radius));
+
+    if (h.hit_vptr == -1)
+        return texture(colorTexture, coord);
+     else if (h.hit_vptr>=0)
+            return h.t.x * color1 + h.t.y * color2 + h.t.z * color0;
+     return vec4(0, 1, 0, 1);
+
+}
+
+bool intersectPlane(vec4 origin, vec4 dir, out vec4 dist)
+{
+    vec4  Q      = vec4(0, -groundDistance, 0, 1);
+    vec3  normal = vec3(0, 1, 0);
+    float denom  = dot(dir.xyz,normal);
+
+    if (denom != 0.0) {
+        vec3 dirNormalize = normalize(dir).xyz;
+        float lambda = dot((Q - origin).xyz, normal) / dot(dirNormalize, normal);
+        if (lambda >= EPS) {
+            vec3 pointOnPlane = origin.xyz + lambda * dir.xyz;
+            dist.xyz = pointOnPlane - center;
+            dist.w = lambda;
+            return true;
+        }
+    }
+    return false;
+
 }
 
 bool isIntersected(vec4 origin, vec4 dir, out hitinfo_t h)
 {
-    vec4 dist; // stores distance + barycentric coord
-	bool hit = false;
-	h.t.x = radius * MAX_SCENE_BOUNDS;
-	if(intersectBoundingBox(origin, dir)) {
-		for(int j = 0; j < indices.length(); j += 3) {
-			if(intersectTriangle(origin, dir, j, dist)) {
-				// TODO
-			}
-		}
-	}
-	return hit;
+    vec4 dist;
+    bool hit = false;
+    h.t.w    = radius * MAX_SCENE_BOUNDS;
+    vec4 planeDist;
+
+    // plane intersection
+    hit = intersectPlane(origin, dir, planeDist);
+    if (hit)
+    {
+        h.t = planeDist;
+        h.hit_vptr = -1;
+    }
+
+    if(intersectBoundingBox(origin, dir)) {
+        for(int j = 0; j < indices.length(); j += 3)
+        {
+            if(intersectTriangle(origin, dir, j, dist))
+            {
+                if (h.t.w > dist.w)
+                {
+                    h.t = dist;
+                    h.hit_vptr = j;
+                }
+                hit = true;
+            }
+         }
+    }
+    return hit;
 }
 
-const int MAX_TRACE = 1;
 
+float fresnel2(float eta, float cosTheta)
+{
+    float Ci = sqrt(pow(eta,2.0)-(1-pow(cosTheta,2.0)));
+    float Fs = pow(abs((cosTheta-Ci)/(cosTheta+Ci)),2.0);
+    float Fp = pow(abs((pow(eta,2.0)*cosTheta-Ci)/(pow(eta,2.0)*cosTheta+Ci)),2.0);
+    return 0.5*(Fs+Fp);
+}
+
+float indicatorX(float cosTheta)
+{
+    if (cosTheta >= 0 && cosTheta <= 1)
+        return 1.0;
+    else return 0.0;
+}
+const float PI = 3.1415926535897932384626433832795;
+
+vec4 phongShading(vec4 light, vec4 vertNormal, vec4 eye, vec4 color, vec4 newOrigin) {
+
+    float ka       = 0.2,
+          kd       = 0.4,
+          cosTheta = 0.0;
+
+    hitinfo_t h;
+
+   //Normalize 
+   vec4 lightVectorNormal = light,
+        eyeVectorNormal   = eye,
+        vertNormalNormal  = normalize(vertNormal);
+
+    //Ambient lighting
+    vec4 ambientLighting  = ka * lightIntensity * color;
+
+    bool bAmbiant         = isIntersected(newOrigin, -lightVectorNormal, h);
+
+    if (bAmbiant == false)
+    {
+        
+        //Diffuse lighting
+        vec4 diffuseLighting = kd * max(dot(vertNormalNormal,-lightVectorNormal),0.0) * color;
+
+        vec4  H = normalize(-lightVectorNormal + eyeVectorNormal);
+
+        //Specular Lighting
+        vec4  specularLighting;
+
+        if (blinnPhong)
+           specularLighting  = color * pow(max(dot(vertNormalNormal, H), 0.0), shininess) * lightIntensity;
+        else{
+            float alpha        = 1 / shininess;
+            float alphaSquare  = pow(alpha,2.0);
+            float cosThetaIn   = dot(vertNormalNormal, -lightVectorNormal);
+            float cosThetaOut  = dot(vertNormalNormal, eyeVectorNormal);
+            float cosThetaH    = dot(H, vertNormalNormal);
+            float tanInSquare  = (1.0-pow(cosThetaIn,2.0))  / pow(cosThetaIn,2.0);
+            float tanOutSquare = (1.0-pow(cosThetaOut,2.0)) / pow(cosThetaOut,2.0);
+            float tanHSquare   = (1.0-pow(cosThetaH,2.0))   / pow(cosThetaH,2.0);
+
+            float gIn          = 2.0 / (1.0 + sqrt(1.0 + alphaSquare * tanInSquare));
+            float gOut         = 2.0 / (1.0 + sqrt(1.0 + alphaSquare * tanOutSquare));
+
+            float microfacetNormalDistribution = (indicatorX(cosThetaH)/(PI*pow(cosThetaH,4.0))) * (alphaSquare/(pow(alphaSquare + tanHSquare,2.0)));
+
+            specularLighting = color * ((microfacetNormalDistribution * gIn * gOut)/ (4.0*cosThetaIn*cosThetaOut))  * lightIntensity;
+          }
+
+         cosTheta = dot(H, -lightVectorNormal);
+         specularLighting *= fresnel2(eta, cosTheta);
+         return  ambientLighting + diffuseLighting + specularLighting;
+    }
+    else
+        return ambientLighting;
+}
 
 vec4 trace(vec4 origin, vec4 dir)
 {
-	// TODO: trace a ray in the scene, see what it intersects, bounce around
-    return vec4(1);
+    sRayIntersection intersections[MAX_TRACE];
+    hitinfo_t h;
+
+    int  iBounds  = 0;
+    float fresnel = 1.0;
+
+    vec4 newOrigin    = origin,
+         newDirection = dir,
+         ret          = vec4(0,0,0,1);
+
+    // forward trace
+    while (iBounds <= int(MAX_SCENE_BOUNDS) && isIntersected(newOrigin, newDirection, h)) {
+        intersections[iBounds].origin = newOrigin;
+        newOrigin += h.t.w * newDirection;
+        intersections[iBounds].pointHit  = newOrigin;
+        intersections[iBounds].normal    = interpolateNormal(h);
+        intersections[iBounds].direction = reflect(newDirection, intersections[iBounds].normal);
+        intersections[iBounds].color     = interpolateColor(h);
+
+        if (dot(intersections[iBounds].normal, intersections[iBounds].direction)<=0)
+            break;
+
+        newDirection = vec4(intersections[iBounds].direction);
+        iBounds ++;
+    }
+
+
+    // Backward color compute
+    for (int i = iBounds-1; i >=0; i--) {
+        //direct light with shadow ray
+        vec4 vertEye   = normalize(origin - intersections[i].pointHit);
+        vec4 vertLight = normalize(intersections[i].pointHit - vec4(lightPosition, 1));
+        ret = phongShading(vertLight, intersections[i].normal, vertEye, intersections[i].color, newOrigin);
+    }
+    return ret;
 }
+
 
 layout (local_size_x = 8, local_size_y = 8) in;
 void main(void) {
@@ -98,11 +315,11 @@ void main(void) {
     if (pix.x >= size.x || pix.y >= size.y) {
         return;
     }
-    vec2 pos = pix / (size - vec2(0.5,0.5)); 
+    vec2 pos = pix / (size - vec2(0.5,0.5));
     // pos in [0,1]^2 Need it in [-1,1]^2:
     pos = 2 * pos - vec2(1.,1.);
 
-    // Step 1: I need pixel coordinates. 
+    // Step 1: I need pixel coordinates.
     vec4 worldPos = vec4(pos.x, pos.y, 1.0, 1.0);
     worldPos = persp_inverse * worldPos;
     worldPos /= worldPos.w;
@@ -115,3 +332,4 @@ void main(void) {
 
     imageStore(framebuffer, pix, color);
 }
+
